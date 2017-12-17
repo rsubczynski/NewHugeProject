@@ -95,11 +95,11 @@ class ComboBoxFrame extends JFrame
       
       JPanel comboPanel2 = new JPanel();
       comboPanel.add(faceCombo2);
-      add(comboPanel2, BorderLayout.EAST);
+      add(comboPanel2, BorderLayout.CENTER);
    }
 
-   public static final int DEFAULT_WIDTH = 300;
-   public static final int DEFAULT_HEIGHT = 200;
+   public static final int DEFAULT_WIDTH = 500;
+   public static final int DEFAULT_HEIGHT = 400;
 
    private JComboBox faceCombo, faceCombo2 ;
    private JLabel label;
