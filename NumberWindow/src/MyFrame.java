@@ -91,7 +91,7 @@ class ComboBoxFrame extends JFrame
 
       JPanel comboPanel = new JPanel();
       comboPanel.add(faceCombo);
-      add(comboPanel, BorderLayout.WEST);
+      add(comboPanel, BorderLayout.BEFORE_FIRST_LINE);
       
       JPanel comboPanel2 = new JPanel();
       comboPanel.add(faceCombo2);
