@@ -14,19 +14,19 @@ public class MyFrame
          {
             public void run()
             {
+            	
 
                ComboBoxFrame frame = new ComboBoxFrame();
                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                frame.setVisible(true);
                
                //Dodanie przycisku OK
-
                JButton b=new JButton("Oblicz");  
                   b.setBounds(200,200,95,30);  
                   frame.add(b);  
                   frame.setSize(400,400);  
                   frame.setLayout(null);  
-                  frame.setVisible(true);  
+                  frame.setVisible(true);
             }
          });
    }
@@ -43,10 +43,13 @@ class ComboBoxFrame extends JFrame
       setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
 
       // Dodanie tekstu etykiety.
-
       label = new JLabel("WYNIK");
       label.setFont(new Font("Serif", Font.PLAIN, DEFAULT_SIZE));
       add(label, BorderLayout.CENTER);
+      
+      label2 = new JLabel("WWWWWWWWWWW");
+      label2.setFont(new Font("Serif", Font.PLAIN, DEFAULT_SIZE));
+      add(label2, BorderLayout.WEST);
 
       // Tworzenie listy rozwijanej i dodawanie nazw czcionek.
 
@@ -82,5 +85,6 @@ class ComboBoxFrame extends JFrame
 
    private JComboBox faceCombo;
    private JLabel label;
+   private JLabel label2;
    private static final int DEFAULT_SIZE = 12;
 }
