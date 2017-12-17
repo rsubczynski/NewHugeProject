@@ -18,6 +18,15 @@ public class MyFrame
                ComboBoxFrame frame = new ComboBoxFrame();
                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                frame.setVisible(true);
+               
+               //Dodanie przycisku OK
+
+               JButton b=new JButton("Oblicz");  
+                  b.setBounds(200,200,95,30);  
+                  frame.add(b);  
+                  frame.setSize(400,400);  
+                  frame.setLayout(null);  
+                  frame.setVisible(true);  
             }
          });
    }
@@ -35,7 +44,7 @@ class ComboBoxFrame extends JFrame
 
       // Dodanie tekstu etykiety.
 
-      label = new JLabel("Koń i żółw grali w koci z pięknš ćmš u ródła.");
+      label = new JLabel("WYNIK");
       label.setFont(new Font("Serif", Font.PLAIN, DEFAULT_SIZE));
       add(label, BorderLayout.CENTER);
 
@@ -65,6 +74,7 @@ class ComboBoxFrame extends JFrame
       JPanel comboPanel = new JPanel();
       comboPanel.add(faceCombo);
       add(comboPanel, BorderLayout.SOUTH);
+      
    }
 
    public static final int DEFAULT_WIDTH = 300;
