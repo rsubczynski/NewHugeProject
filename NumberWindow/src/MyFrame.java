@@ -35,11 +35,8 @@ class ComboBoxFrame extends JFrame
 
       // Dodanie tekstu etykiety.
 
-      label = new JLabel("Koñ i ¿ó³w grali w koœci z piêkn¹ æm¹ u Ÿród³a.");
-      label.setFont(new Font("Serif", Font.PLAIN, DEFAULT_SIZE));
       button = new Button("*");
       JLabel label1 = new JLabel("Tutaj bedzie wynik");
-      add(label, BorderLayout.CENTER);
       
 
       // Tworzenie listy rozwijanej i dodawanie nazw czcionek.
