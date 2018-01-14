@@ -37,7 +37,7 @@ class ComboBoxFrame extends JFrame
 
       label = new JLabel("Koñ i ¿ó³w grali w koœci z piêkn¹ æm¹ u Ÿród³a.");
       label.setFont(new Font("Serif", Font.PLAIN, DEFAULT_SIZE));
-      button = new Button("+");
+      button = new Button("*");
       JLabel label1 = new JLabel("Tutaj bedzie wynik");
       add(label, BorderLayout.CENTER);
       
@@ -64,7 +64,7 @@ class ComboBoxFrame extends JFrame
     	  public void actionPerformed(ActionEvent e)
     	  {
     		  
-    		  int wynik = (int)faceCombo2.getSelectedItem() + (int)faceCombo.getSelectedItem();
+    		  int wynik = (int)faceCombo2.getSelectedItem() * (int)faceCombo.getSelectedItem();
     		  
     		  label1.setText(String.valueOf(wynik));
     		  
