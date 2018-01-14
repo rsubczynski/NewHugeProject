@@ -23,9 +23,6 @@ public class MyFrame
    }
 }
 
-/**
- * Ramka z przyk³adow¹ etykiet¹ tekstow¹ i list¹ rozwijan¹ umo¿liwiaj¹c¹ wybór kroju czcionki.
- */
 class ComboBoxFrame extends JFrame
 {
    public ComboBoxFrame()
@@ -33,13 +30,11 @@ class ComboBoxFrame extends JFrame
       setTitle("ComboBoxTest");
       setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
 
-      // Dodanie tekstu etykiety.
 
       button = new Button("*");
       JLabel label1 = new JLabel("Tutaj bedzie wynik");
       
 
-      // Tworzenie listy rozwijanej i dodawanie nazw czcionek.
 
       faceCombo = new JComboBox();
       faceCombo.setEditable(true);
@@ -54,7 +49,6 @@ class ComboBoxFrame extends JFrame
     	  faceCombo2.addItem(i);
       }
 
-      // S³uchacz listy rozwijanej zmienia krój pisma etykiety na czcionkê wybran¹ przez u¿ytkownika.
 
       button.addActionListener(new ActionListener()
       {
@@ -67,8 +61,6 @@ class ComboBoxFrame extends JFrame
     		  
     	  }
     	});
-
-      // Dodanie listy rozwijanej do panelu znajduj¹cego siê przy po³udniowej krawêdzi ramki.
 
       JPanel comboPanel = new JPanel();
       comboPanel.add(faceCombo);
