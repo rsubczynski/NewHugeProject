@@ -43,30 +43,16 @@ class ComboBoxFrame extends JFrame
 
       faceCombo = new JComboBox();
       faceCombo.setEditable(true);
-      faceCombo.addItem(1);
-      faceCombo.addItem(2);
-      faceCombo.addItem(3);
-      faceCombo.addItem(4);
-      faceCombo.addItem(5);
-      faceCombo.addItem(6);
-      faceCombo.addItem(7);
-      faceCombo.addItem(8);
-      faceCombo.addItem(9);
-      faceCombo.addItem(10);
+      for(Integer i : Generator.GenerateNumberList()) {
+    	  faceCombo.addItem(i);
+      }
       
       
       faceCombo2 = new JComboBox();
       faceCombo2.setEditable(true);
-      faceCombo2.addItem(1);
-      faceCombo2.addItem(2);
-      faceCombo2.addItem(3);
-      faceCombo2.addItem(4);
-      faceCombo2.addItem(5);
-      faceCombo2.addItem(6);
-      faceCombo2.addItem(7);
-      faceCombo2.addItem(8);
-      faceCombo2.addItem(9);
-      faceCombo2.addItem(10);
+      for(Integer i : Generator.GenerateRandomNumberList()) {
+    	  faceCombo2.addItem(i);
+      }
 
       // S³uchacz listy rozwijanej zmienia krój pisma etykiety na czcionkê wybran¹ przez u¿ytkownika.
 
