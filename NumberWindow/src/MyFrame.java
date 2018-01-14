@@ -37,7 +37,10 @@ class ComboBoxFrame extends JFrame
 
       label = new JLabel("Koñ i ¿ó³w grali w koœci z piêkn¹ æm¹ u Ÿród³a.");
       label.setFont(new Font("Serif", Font.PLAIN, DEFAULT_SIZE));
+      button = new Button("+");
+      JLabel label1 = new JLabel("Tutaj bedzie wynik");
       add(label, BorderLayout.CENTER);
+      
 
       // Tworzenie listy rozwijanej i dodawanie nazw czcionek.
 
@@ -56,23 +59,17 @@ class ComboBoxFrame extends JFrame
 
       // S³uchacz listy rozwijanej zmienia krój pisma etykiety na czcionkê wybran¹ przez u¿ytkownika.
 
-      faceCombo.addActionListener(new ActionListener()
-         {
-            public void actionPerformed(ActionEvent event)
-            {
-              int  liczbaPierwsza = (int) faceCombo.getSelectedItem();
-              System.out.println(liczbaPierwsza);
-             
-            }
-         });
-      faceCombo2.addActionListener(new ActionListener()
+      button.addActionListener(new ActionListener()
       {
-         public void actionPerformed(ActionEvent event)
-         {
-        	 int  liczbaPierwsza2 = (int) faceCombo2.getSelectedItem();
-        	 System.out.println(liczbaPierwsza2);
-         }
-      });
+    	  public void actionPerformed(ActionEvent e)
+    	  {
+    		  
+    		  int wynik = (int)faceCombo2.getSelectedItem() + (int)faceCombo.getSelectedItem();
+    		  
+    		  label1.setText(String.valueOf(wynik));
+    		  
+    	  }
+    	});
 
       // Dodanie listy rozwijanej do panelu znajduj¹cego siê przy po³udniowej krawêdzi ramki.
 
@@ -83,15 +80,18 @@ class ComboBoxFrame extends JFrame
       JPanel comboPanel2 = new JPanel();
       comboPanel.add(faceCombo2);
       add(comboPanel2, BorderLayout.CENTER);
-      Button button = new Button();
-//      button.
-//      add(button);
+     
+      button.setSize( 50, 75 );
+      comboPanel.add(button);
+      comboPanel.add(label1);
    }
 
    public static final int DEFAULT_WIDTH = 500;
    public static final int DEFAULT_HEIGHT = 400;
-
+   private int  liczbaPierwsza2 = 0;
+   private int  liczbaPierwsza = 0 ;
    private JComboBox faceCombo, faceCombo2 ;
    private JLabel label;
+   private Button button;
    private static final int DEFAULT_SIZE = 12;
 }
