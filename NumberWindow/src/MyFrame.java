@@ -60,16 +60,17 @@ class ComboBoxFrame extends JFrame
          {
             public void actionPerformed(ActionEvent event)
             {
-               label.setFont(new Font((String) faceCombo.getSelectedItem(), Font.PLAIN,
-                     DEFAULT_SIZE));
+              int  liczbaPierwsza = (int) faceCombo.getSelectedItem();
+              System.out.println(liczbaPierwsza);
+             
             }
          });
       faceCombo2.addActionListener(new ActionListener()
       {
          public void actionPerformed(ActionEvent event)
          {
-            label.setFont(new Font((String) faceCombo2.getSelectedItem(), Font.PLAIN,
-                  DEFAULT_SIZE));
+        	 int  liczbaPierwsza2 = (int) faceCombo2.getSelectedItem();
+        	 System.out.println(liczbaPierwsza2);
          }
       });
 
@@ -82,6 +83,9 @@ class ComboBoxFrame extends JFrame
       JPanel comboPanel2 = new JPanel();
       comboPanel.add(faceCombo2);
       add(comboPanel2, BorderLayout.CENTER);
+      Button button = new Button();
+//      button.
+//      add(button);
    }
 
    public static final int DEFAULT_WIDTH = 500;
