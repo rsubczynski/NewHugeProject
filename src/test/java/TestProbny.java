@@ -22,4 +22,5 @@ public class TestProbny {
         ArrayList<Integer> numberList = new ArrayList<Integer>();
         numberList.addAll(Generator.GenerateNumberList());
         assertEquals(result, numberList.size());}
+
 }
