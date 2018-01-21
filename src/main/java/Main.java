@@ -3,10 +3,6 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-/**
- * @version 1.33 2007-06-12
- * @author Cay Horstmann
- */
 public class Main
 {
 
