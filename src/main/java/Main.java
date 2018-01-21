@@ -60,7 +60,6 @@ class ComboBoxFrame extends JFrame
             faceCombo2.addItem(i);
         }
 
-
         faceCombo = new JComboBox();
         faceCombo.setEditable(true);
         for(Stade i : stadeArrayList) {
