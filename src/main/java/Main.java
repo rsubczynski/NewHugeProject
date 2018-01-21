@@ -36,7 +36,7 @@ class ComboBoxFrame extends JFrame
 
     public ComboBoxFrame()
     {
-        stadeArrayList.add(new Stade("Alabama",1));
+        stadeArrayList.add(new Stade("Alabama",4));
         stadeArrayList.add(new Stade("Blabama",2));
         stadeArrayList.add(new Stade("Clabama",3));
 
